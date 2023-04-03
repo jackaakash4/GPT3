@@ -1,9 +1,22 @@
 import './App.css'
 
-function App() {
+import {Blog, Footer, Header, Possibility, WhatGPT3} from './containers'
+import {Cta, Brand, Navbar} from './components'
 
+function App() {
   return (
-    <div><h1>GPT-3</h1>
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Possibility />
+      <Cta />
+      <Blog />
+      <Footer />
+
     </div> 
 
   )
